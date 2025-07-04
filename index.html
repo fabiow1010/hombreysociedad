@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto de la Resolución 970 y el TLC en Colombia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Conflicto Agrario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sintesis">Síntesis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carga-archivo">Cargar Archivo</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tierra.html">Documental Pies sobre tierra</a>
+                    </li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabecera -->
+    <header class="header-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Resolución 970 y su impacto en el campo colombiano</h1>
+            <p class="lead">Un análisis del efecto de la normativa sobre semillas y el Tratado de Libre Comercio.</p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- Video -->
+                <section id="video" class="mb-5">
+                    <h2 class="text-center mb-4">Video de Referencia</h2>
+                    <div class="ratio ratio-16x9 rounded-3 shadow">
+                        <iframe src="https://www.youtube.com/embed/kZWAqS-El_g" title="Video Resolución 970"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <!-- Síntesis -->
+                <section id="sintesis" class="mb-5">
+                    <div class="card">
+                        <div class="card-header">
+                            Síntesis del Recurso Audiovisual
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="card-text">
+                                El video analiza las consecuencias de la Resolución 970 en Colombia, una normativa que
+                                prohíbe a los agricultores utilizar semillas no certificadas. Esta medida obliga a los
+                                campesinos a comprar semillas nuevas en cada ciclo agrícola, lo que afecta especialmente
+                                a los pequeños productores, como los del municipio de Campoalegre.
+                            </p>
+                            <p class="card-text">
+                                La resolución protege los derechos de autor de las grandes empresas de semillas y ha
+                                sido aplicada con rigor por entidades como el ICA, generando la destrucción de toneladas
+                                de arroz considerado “ilegal” por no estar certificado. Muchos agricultores fueron
+                                tratados como delincuentes, acusados de piratería por reutilizar sus propias semillas.
+                            </p>
+                            <p class="card-text">
+                                Esta situación se agrava con la implementación del Tratado de Libre Comercio (TLC) con
+                                Estados Unidos, que ha incrementado la importación de productos agrícolas y debilitado
+                                la economía campesina. Empresas transnacionales como Monsanto, Dupont y Syngenta buscan
+                                dominar el mercado colombiano de semillas, limitando la soberanía alimentaria.
+                            </p>
+                            <p class="card-text">
+                                El video critica que se intenten aplicar modelos de desarrollo ajenos sin considerar el
+                                contexto local. La falta de información hacia los agricultores, la criminalización de
+                                prácticas tradicionales y la pérdida de diversidad agrícola son algunos de los efectos
+                                más graves. Se concluye que es necesario replantear las políticas agrícolas considerando
+                                las realidades y capacidades del país.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Envío de Ensayo por Correo -->
+                <section id="carga-archivo" class="mb-5">
+                    <div class="card">
+                        <div class="card-header">
+                            Redacta tu ensayo y envíalo por correo
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-muted">
+                                Este formulario abrirá tu cliente de correo predeterminado con el ensayo escrito como
+                                mensaje. Asegúrate de tener configurado un programa de correo en tu dispositivo.
+                            </p>
+                            <form id="emailForm">
+                                <div class="mb-3">
+                                    <label for="emailTo" class="form-label">Enviar a (Correo Electrónico):</label>
+                                    <input type="email" class="form-control" id="emailTo"
+                                        placeholder="ejemplo@dominio.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailSubject" class="form-label">Asunto:</label>
+                                    <input type="text" class="form-control" id="emailSubject"
+                                        placeholder="Asunto del correo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailBody" class="form-label">Ensayo:</label>
+                                    <textarea class="form-control" id="emailBody" rows="12"
+                                        placeholder="Escribe aquí tu ensayo completo..."></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary w-100" onclick="sendEmail()">Enviar por
+                                    Correo</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!-- Pie de Página -->
+                <footer class="footer text-center">
+                    <div class="container">
+                        <p>&copy; 2025 Hombre y Sociedad. Todos los derechos reservados.</p>
+                    </div>
+                </footer>
+
+                <!-- Scripts -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="script.js"></script>
+</body>
+
+</html>

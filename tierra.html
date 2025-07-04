@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con los pies en la tierra - Documental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Síntesis IA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="header-section text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Documental: Con los pies en la tierra</h1>
+            <p class="lead">Tres historias sobre la conexión entre agua, territorio y cultura campesina.</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <div class="row g-4">
+
+            <!-- Video 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow rounded-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/E0XTE2PQtDI" title="Capítulo I - Chicamocha"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Capítulo I - Chicamocha</h5>
+                        <p class="card-text text-muted small">
+                            Un artista rural reflexiona sobre la importancia espiritual y ecológica del río Chicamocha.
+                            Se denuncia su contaminación por parte de municipios y cultivos, y se propone una restauración con tratamiento de aguas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow rounded-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/sEIxfychkRs" title="Capítulo II - Oxuetá"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Capítulo II - Oxuetá</h5>
+                        <p class="card-text text-muted small">
+                            Una mujer campesina relata su conexión con los páramos sagrados y cómo su poesía y agricultura orgánica contribuyen a proteger el ecosistema. Maruja simboliza la resistencia espiritual del territorio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow rounded-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/srTfQcca9Fk" title="Capítulo III - Tota"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Capítulo III - Tota</h5>
+                        <p class="card-text text-muted small">
+                            Javier Acevedo defiende el uso sostenible del agua en el lago de Tota. El documental destaca la agricultura consciente y la conservación hídrica para el futuro del ecosistema y la cultura campesina.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Sección de envío de ensayo -->
+    <section id="carga-archivo" class="container mb-5">
+        <div class="card shadow rounded-3">
+            <div class="card-header fw-semibold">
+                Redacta tu ensayo y envíalo por correo
+            </div>
+            <div class="card-body p-4">
+                <p class="text-muted mb-4">
+                    Este formulario abrirá tu cliente de correo predeterminado con el ensayo escrito como mensaje. Asegúrate de tener configurado un programa de correo en tu dispositivo.
+                </p>
+                <form id="emailForm">
+                    <div class="mb-3">
+                        <label for="emailTo" class="form-label">Enviar a (Correo Electrónico):</label>
+                        <input type="email" class="form-control" id="emailTo" placeholder="ejemplo@dominio.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailSubject" class="form-label">Asunto:</label>
+                        <input type="text" class="form-control" id="emailSubject" placeholder="Asunto del correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailBody" class="form-label">Ensayo:</label>
+                        <textarea class="form-control" id="emailBody" rows="10"
+                            placeholder="Escribe aquí tu ensayo completo..."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary w-100" onclick="sendEmail()">Enviar por Correo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer text-center py-3">
+        <div class="container">
+            <p class="text-muted mb-0">&copy; 2025 Hombre y Sociedad. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
